@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	font-family: 'Montserrat'; sans-serif
+}
+a{
+	text-decoration: none;
+}
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Header Section */
+#header{
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header{
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+}
+#header .nav-bar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+#header .nav-bar .brand h1{
+	color: crimson;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+#header .nav-list ul{
+	position: initial;
+	display: block;
+	height: auto;
+	width: fit-content;
+	background-color: transparent;
+}
+#header .nav-list ul li{
+	list-style: none;
+	display: inline-block;
+}
+#header .nav-list ul li a{
+	font-size: 1.8rem;
+	font-weight: 900;
+	letter-spacing: 2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+#header .nav-list ul li:hover a{
+		color: crimson;
+}
+#header .nav-list ul li:after{
+		display: none;
+}
+/* End Header Section */
+
+/* Hero Section */
+#hero{
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%), url(home.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+} 
+*hero:after{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: .7;
+	z-index: -1;
+}
+#hero .hero{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1{
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: transparent;
+	animation: text_reveal .5s ease forwards;
+	animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+	animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+	animation-delay: 2s;
+}
+#hero h1 span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: crimson;
+	animation: text_reveal_box 1s ease;
+	animation-delay: .3s;
+}
+#hero h1:nth-child(1) span{
+	animation-delay: .5s;
+}
+#hero h1:nth-child(2) span{
+	animation-delay: 1.5s;
+}
+#hero .cta{
+	display: inline-block;
+	padding: 10px 30px;
+	color: crimson;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+#hero .cta:hover{
+	color: white;
+	background-color: crimson;
+}
+/* End Hero Section */
+
+/* About Me Section*/
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-right{
+	width: 100%;
+}
+#about .col-right h1{
+	font-size: 5rem;
+	margin-bottom: 6px;
+	color: crimson;
+}
+#about .col-right h2{
+	font-size: 1.8rem;
+	letter-spacing: .3rem;
+	margin-bottom: 10px;
+}
+#about .col-right p{
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+	text-align: justify;
+}
+#about .col-left .about-img{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#about .col-left .about-img:after{
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 100%;
+	width: 100%;
+	border: 8px solid crimson;
+	z-index: -2;
+}
+/* End About Setion*/
+
+/* Future Section */
+#future{
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6)70%, rgba(0, 0, 0, 0.6)70%), url(future.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+#future .future {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#future .col-right{
+	width: 100%;
+}
+#future .col-right h1{
+	font-size: 5rem;
+	margin-bottom: 6px;
+	color: crimson;
+}
+#future .col-right h2{
+	font-size: 1.8rem;
+	letter-spacing: .3rem;
+	margin-bottom: 10px;
+	color: white;
+}
+#future .col-right p{
+	margin-bottom: 20px;
+	font-size: 1.3rem;
+	text-align: justify;
+	color: white;
+}
+/* End Future Section */
+
+/* Portofolio Section */
+#portofolio .portofolio{
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#portofolio .portofolio-header h1{
+	font-size: 5rem;
+	margin-bottom: 50px;
+	color: crimson;
+}
+#portofolio .all-portofolio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#portofolio .portofolio-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#portofolio .portofolio-info{
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#portofolio .portofolio-info h1{
+	font-size: 2.5rem;
+}
+#portofolio .portofolio-info p{
+	font-size: 1.2rem;
+	margin-top: 5px;
+	font-weight: 300;
+}
+#portofolio .portofolio-img{
+	flex-basis: 50%;
+	height: 300;
+	overflow: hidden;
+	position: relative;
+}
+#portofolio .portofolio-img:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .3;
+}
+#portofolio .portofolio-img img{
+	transition: .30s ease tranform;
+}
+#portofolio .portofolio-item:hover .portofolio-img img{
+	transform: scale(1.1);
+}
+/* End Portofolio Section */
+
+/* Keyframes */
+@keyframes text_reveal_box{
+	50%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal{
+	100%{
+		color: white;
+	}
+}
+/* End Keyframes */
+
+/* Media Query For Tablet */
+@media only screen and (min-width:768px){
+	.cta{
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1 .section-title{
+		font-size: 6rem;
+	}
+
+	/* Hero */
+	#hero h1{
+		font-size: 5rem;
+	}
+	/* End Hero Section */
+
+
+	/* About Section */
+	#about .about{
+		flex-direction: row;
+	}
+	#about .col-left{
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+	#about .about .col-left .about-img:after{
+		left: -45px;
+		top: 60px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid crimson;
+	}
+	#about .col-right{
+		text-align: justify;
+		padding: 30px;
+	}
+	#about .col-right h1{
+		text-align: left;
+	}
+	#about .col-right h2{
+		letter-spacing: .3rem;
+	}
+	#about .col-right p{
+		margin-bottom: 30px;
+	}
+	/* End About Section */
+
+	/* Future Section*/
+	#future .future{
+		flex-direction: row;
+		text-align: right;
+	}
+	#future .col-right h1{
+	font-size: 5rem;
+	margin-bottom: 6px;
+	color: crimson;
+	}
+	#future .col-right h2{
+	font-size: 1.8rem;
+	letter-spacing: .3rem;
+	margin-bottom: 20px;
+	color: white;
+	}
+	#future .col-right p{
+	margin-bottom: 20px;
+	margin-left: 580px;
+	font-size: 1.3rem;
+	text-align: justify;
+	color: white;
+	}
+	/* End Future Section */
+
+	/* Portofolio Section */
+	#portofolio .portofolio-item{
+		flex-direction: row;
+	}
+	#portofolio .portofolio-item:nth-child(even){
+		flex-direction: row-reverse;
+	}
+	#portofolio .portofolio-item{
+		height: 300px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#portofolio .all-portofolio .portofolio-info{
+		height: 100%;
+	}
+	#portofolio .all-portofolio. .portofolio-img{
+		height: 100%;
+	}
+	#portofolio .portofolio-info h1{
+	font-size: 2.5rem;
+	}
+	#portofolio .portofolio-info p{
+	font-size: 1.2rem;
+	margin-top: 5px;
+	font-weight: 300;
+	}
+	/* End Portofolio Section */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Dekstop */
+@media only screen and (min-width: 100px){
+	/* header */
+	#header .hamburger{
+		display: none;
+	}
+	#header .nav-list ul{
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li{
+		list-style: none;
+		display: inline-block;
+	}
+	#header .nav-list ul li a{
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: .2rem;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		padding: 10px;
+		display: block;
+	}
+	#header .nav-list ul li:hover a{
+		color: crimson;
+	}
+	#header .nav-list ul li:after{
+		display: none;
+	}
+	/* End Header */
+}
+/* End Media Query For Dekstop */
