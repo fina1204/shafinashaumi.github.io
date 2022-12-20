@@ -459,3 +459,40 @@ a{
 	/* End Header */
 }
 /* End Media Query For Dekstop */
+
+/* Media Query For Mobile Device*/
+@media screen and (max-width: 476px){
+	/* Header */
+	#header .hamburger{
+		display: none;
+	}
+	#header .nav-list ul{
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li{
+		list-style: none;
+		display: inline-block;
+	}
+	#header .nav-list ul li a{
+		font-size: 1rem
+		font-weight: 700;
+		letter-spacing: .1rem;
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		padding: 10px;
+		display: block;	
+	}
+	#header .nav-list ul li:hover a{
+		color: crimson;
+	}
+	#header .nav-list ul li:after{
+		display: none;
+	}
+	/* End Header */
+}
+/*End Media Query For Mobile Device */
