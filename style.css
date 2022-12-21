@@ -176,8 +176,8 @@ a{
 	text-align: justify;
 }
 #about .col-left .about-img{
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
@@ -186,8 +186,8 @@ a{
 	position: absolute;
 	left: -33px;
 	top: 19px;
-	height: 80%;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	border: 8px solid crimson;
 	z-index: -2;
 }
@@ -340,8 +340,8 @@ a{
 		flex-direction: row;
 	}
 	#about .col-left{
-		width: 600px;
-		height: 400px;
+		width: 500px;
+		height: 300px;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img:after{
