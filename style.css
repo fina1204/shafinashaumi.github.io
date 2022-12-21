@@ -340,8 +340,8 @@ a{
 		flex-direction: row;
 	}
 	#about .col-left{
-		width: 500px;
-		height: 300px;
+		width: 600px;
+		height: 400px;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img:after{
