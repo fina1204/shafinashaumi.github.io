@@ -178,7 +178,7 @@ a{
 #about .col-left .about-img{
 	height: 100%;
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 48px;
 	position: relative;
 	border: -1px solid white;
 }
@@ -346,9 +346,9 @@ a{
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img:after{
-		left: -20px;
-		top: 40px;
-		height: 73%;
+		left: -12px;
+		top: 49px;
+		height: 69%;
 		width: 90%;
 		border: 10px solid crimson;
 	}
