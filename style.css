@@ -253,13 +253,13 @@ a{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 50%;
-	margin: 10px auto;
+	width: 60%;
+	margin: 15px auto;
 	overflow: hidden;
 	border-radius: 10px;
 }
 #portofolio .portofolio-info{
-	padding: 20px;
+	padding: 25px;
 	flex-basis: 50%;
 	height: 100%;
 	display: flex;
